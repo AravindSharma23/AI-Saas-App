@@ -17,7 +17,7 @@ app.use(clerkMiddleware());
 connectDB(process.env.MONGO_URI);
 
 app.use(cors({
-    origin: process.env.FRONTEND_URI,
+    origin: "https://ai-saas-app-frontend-mbu0.onrender.com" || process.env.FRONTEND_URI,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true 
