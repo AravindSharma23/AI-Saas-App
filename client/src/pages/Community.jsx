@@ -4,7 +4,7 @@ import { Heart } from 'lucide-react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+axios.defaults.baseURL = import.meta.env.VITE_BASE_URL  || "https://ai-saas-app-backend-7zwi.onrender.com";
 
 const Community = () => {
 
